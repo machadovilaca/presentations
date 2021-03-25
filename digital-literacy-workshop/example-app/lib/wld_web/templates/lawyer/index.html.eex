@@ -1,0 +1,30 @@
+<h1>Listing Lawyers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Birthday</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for lawyer <- @lawyers do %>
+    <tr>
+      <td><%= lawyer.first_name %></td>
+      <td><%= lawyer.last_name %></td>
+      <td><%= lawyer.birthday %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.lawyer_path(@conn, :show, lawyer) %></span>
+        <span><%= link "Edit", to: Routes.lawyer_path(@conn, :edit, lawyer) %></span>
+        <span><%= link "Delete", to: Routes.lawyer_path(@conn, :delete, lawyer), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Lawyer", to: Routes.lawyer_path(@conn, :new) %></span>

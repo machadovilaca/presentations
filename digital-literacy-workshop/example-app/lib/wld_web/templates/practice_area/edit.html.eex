@@ -1,0 +1,5 @@
+<h1>Edit Practice area</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.practice_area_path(@conn, :update, @practice_area)) %>
+
+<span><%= link "Back", to: Routes.practice_area_path(@conn, :index) %></span>

@@ -1,0 +1,13 @@
+<h1>Show Practice area</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @practice_area.name %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.practice_area_path(@conn, :edit, @practice_area) %></span>
+<span><%= link "Back", to: Routes.practice_area_path(@conn, :index) %></span>

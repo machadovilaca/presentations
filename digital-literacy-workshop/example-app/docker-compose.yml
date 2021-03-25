@@ -1,0 +1,17 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_DB: wld_dev
+      POSTGRES_PASSWORD: wld
+      POSTGRES_USER: wld
+    ports:
+    - 5432:5432
+    restart: always
+    volumes:
+    - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

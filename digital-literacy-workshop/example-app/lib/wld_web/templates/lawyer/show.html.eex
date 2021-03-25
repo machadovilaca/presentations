@@ -1,0 +1,32 @@
+<h1>Show Lawyer</h1>
+
+<ul>
+
+  <li>
+    <strong>First name:</strong>
+    <%= @lawyer.first_name %>
+  </li>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @lawyer.last_name %>
+  </li>
+
+  <li>
+    <strong>Birthday:</strong>
+    <%= @lawyer.birthday %>
+  </li>
+
+  <li>
+    <strong>Practice Areas:</strong>
+    <ul>
+      <%= for practice_area <- @lawyer.practice_areas do %>
+        <li><%= practice_area.name %></li>
+      <% end %>
+    </ul>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.lawyer_path(@conn, :edit, @lawyer) %></span>
+<span><%= link "Back", to: Routes.lawyer_path(@conn, :index) %></span>

@@ -1,0 +1,30 @@
+<h1>Listing Cases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Practice Area</th>
+      <th>Lawyer</th>
+      <th>Details</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for case <- @cases do %>
+    <tr>
+      <td><%= case.practice_area.name %></td>
+      <td><%= "#{case.lawyer.first_name} #{case.lawyer.last_name}" %></td>
+      <td><%= case.details %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.case_path(@conn, :show, case) %></span>
+        <span><%= link "Edit", to: Routes.case_path(@conn, :edit, case) %></span>
+        <span><%= link "Delete", to: Routes.case_path(@conn, :delete, case), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Case", to: Routes.case_path(@conn, :new) %></span>

@@ -1,0 +1,23 @@
+<h1>Show Case</h1>
+
+<ul>
+
+  <li>
+    <strong>Practice Area:</strong>
+    <%= @case.practice_area.name %>
+  </li>
+
+  <li>
+    <strong>Lawyer:</strong>
+    <%= "#{@case.lawyer.first_name} #{@case.lawyer.last_name}" %>
+  </li>
+
+  <li>
+    <strong>Details:</strong>
+    <%= @case.details %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.case_path(@conn, :edit, @case) %></span>
+<span><%= link "Back", to: Routes.case_path(@conn, :index) %></span>

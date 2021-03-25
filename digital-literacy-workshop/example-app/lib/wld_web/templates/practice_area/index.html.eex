@@ -1,0 +1,26 @@
+<h1>Listing Practice areas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for practice_area <- @practice_areas do %>
+    <tr>
+      <td><%= practice_area.name %></td>
+
+      <td>
+        <span><%= link "Show", to: Routes.practice_area_path(@conn, :show, practice_area) %></span>
+        <span><%= link "Edit", to: Routes.practice_area_path(@conn, :edit, practice_area) %></span>
+        <span><%= link "Delete", to: Routes.practice_area_path(@conn, :delete, practice_area), method: :delete, data: [confirm: "Are you sure?"] %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Practice area", to: Routes.practice_area_path(@conn, :new) %></span>

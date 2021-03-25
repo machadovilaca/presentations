@@ -1,0 +1,10 @@
+
+<section class="row">
+  <%= link "Laywers", to: Routes.lawyer_path(@conn, :index) %>
+</section>
+<section class="row">
+  <%= link "Practice Areas", to: Routes.practice_area_path(@conn, :index) %>
+</section>
+<section class="row">
+  <%= link "Cases", to: Routes.case_path(@conn, :index) %>
+</section>

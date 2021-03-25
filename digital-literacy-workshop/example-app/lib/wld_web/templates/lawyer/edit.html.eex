@@ -1,0 +1,5 @@
+<h1>Edit Lawyer</h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.lawyer_path(@conn, :update, @lawyer)) %>
+
+<span><%= link "Back", to: Routes.lawyer_path(@conn, :index) %></span>
