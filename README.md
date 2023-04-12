@@ -5,12 +5,12 @@ to other assets
 
 ## Index
 
-- [LHA](lei-voice-recognition) - Voice recognition for education systems​
+- [Thesis (2022)](thesis) - Orchestration and Distribution of Services in Hybrid Cloud/Edge Environments
 
-- [Infin](infin) - Automating enterprises financial data management and analytics
+- [Infin (2021)](infin) - Automating enterprises financial data management and analytics
 
-- [Thesis](thesis) - Orchestration and Distribution of Services in Hybrid Cloud/Edge Environments
+- [Talk Code to Me (2021)](talkcodetome) - Bringing editor and drawing powers to video calls
 
-- [Talk Code to Me](talkcodetome) - Bringing editor and drawing powers to video calls
+- [Digital Literacy Workshop (2021)](digital-literacy-workshop) - Computer Science introduction and overview for Law Students
 
-- [Digital Literacy Workshop](digital-literacy-workshop) - Computer Science introduction and overview for Law Students
+- [LHA (2020)](lei-voice-recognition) - Voice recognition for education systems​
