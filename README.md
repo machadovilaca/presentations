@@ -5,6 +5,8 @@ to other assets
 
 ## Index
 
+- [FOSDEM (2023)](fosdem) - Best Practices for Operators Monitoring and Observability in Operator SDK
+
 - [Thesis (2022)](thesis) - Orchestration and Distribution of Services in Hybrid Cloud/Edge Environments
 
 - [Infin (2021)](infin) - Automating enterprises financial data management and analytics
